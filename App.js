@@ -16,7 +16,7 @@ export default function App() {
                 <View style={styles.cart}>
                     <Image
                         style={styles.cartImage}
-                        source={require("./assets/favicon.png")}
+                        source={require("./assets/cart.png")}
                     />
                     <Text style={styles.cartCount}>0</Text>
                 </View>
@@ -120,14 +120,14 @@ const styles = StyleSheet.create({
     },
 
     cartImage: {
-        width: 30,
-        height: 30,
-        marginRight: 5,
+        width: 24,
+        height: 24,
+        marginRight: 8,
     },
 
     cartCount: {
         fontSize: 24,
-        fontWeight: "400",
+        fontWeight: "300",
     },
 
     productContainer: {
