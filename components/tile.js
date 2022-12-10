@@ -12,13 +12,17 @@ const CustomTile = () => {
             </Text>
             <View style={styles.tileFooter}>
                 <Text>ISBN 978-8-1783-1191-3</Text>
-                <Pressable style={styles.button}>
+                <Pressable onPress={() => Pressed()} style={styles.button}>
                     <Text style={styles.text}>READ</Text>
                 </Pressable>
             </View>
         </View>
     );
 };
+
+function Pressed() {
+    console.log("READ");
+}
 
 const styles = StyleSheet.create({
     tile: {
